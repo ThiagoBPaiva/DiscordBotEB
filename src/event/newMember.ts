@@ -3,7 +3,7 @@ import { Client, GatewayIntentBits, Message, GuildMember, EmbedBuilder, TextChan
 export function messageNewMember(client: Client) {
     client.on("guildMemberAdd", (member: GuildMember) => {
         console.log(`Um novo membro entrou no servidor, sejá bem vindo ${member.user.tag}`);
-        const canalDeBoasVindas = member.guild.channels.cache.get("1400164035713957999") // Mandando a menssagem para o canal certo de acordo com o ID
+        const canalDeBoasVindas = member.guild.channels.cache.get("1398454409209450511") // Mandando a menssagem para o canal certo de acordo com o ID
 
         // Enviando um Embed para cada pessoa que entrar no servidor
         if (!canalDeBoasVindas?.isTextBased()) return;
